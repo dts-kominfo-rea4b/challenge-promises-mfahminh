@@ -16,15 +16,12 @@ const promiseOutput = async (emosi) =>{
       hasil += count ? 1 : 0;
     });
 
-    console.log(hasil);
+    return(hasil);
 
   }catch (err) {
     console.log(err);
   }
 };
-
-promiseOutput('marah');
-//promiseOutput('tidak marah');
 
 module.exports = {
   promiseOutput,
